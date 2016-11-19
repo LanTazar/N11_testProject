@@ -56,7 +56,7 @@ public class N11Test {
 
         driver.switchTo().window(mainwindow);
 
-        assertEquals("Ata Tunca", driver.findElement(By.xpath("//*[@id=\"header\"]/div/div/div[2]/div[2]/div[1]/div[1]/a[2]")).getText());
+        assertEquals("Namık Taha Eğilli", driver.findElement(By.xpath("//*[@id=\"header\"]/div/div/div[2]/div[2]/div[1]/div[1]/a[2]")).getText());
 
 
         driver.manage().window().maximize();
