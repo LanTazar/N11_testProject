@@ -66,8 +66,10 @@ public class N11Test {
         Thread.sleep(10000);
         driver.findElement(By.xpath("//*[@id=\"contentCategory\"]/div/div[2]/div[1]/ul/li[1]/a")).click();
         Thread.sleep(5000);
-        String Type = driver.findElement(By.className("resultText")).getText();
+        String Type = driver.findElement(By.xpath("//*[@id=\"contentListing\"]/div/div/div[1]/section/div[1]/div[1]/h1")).getText();
         Assert.assertTrue(Type.equals("Kitap"));
+        driver.findElement(By.linkText("Yazarlar")).click();
+        Thread.sleep(3000);
     }
 
     @After
